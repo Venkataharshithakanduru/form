@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reg Form</title>
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="user_name">First Name</label></td>
+            <td>
+              <input
+                name="user_name"
+                type="text"
+                placeholder="Ex: Harshitha"
+                maxlength="25"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="user_surname">Surname</label></td>
+            <td>
+              <input name="user_surname" type="text" placeholder="Ex:K" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="user_age">Age</label></td>
+            <td><input name="user_age" type="number" min="18" max="65" /></td>
+          </tr>
+          <tr>
+            <td><label for="user_number">Mobile Number</label></td>
+            <td>
+              <input
+                name="user_number"
+                type="tel"
+                placeholder="Ex:1234567890"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="user_email">Email</label></td>
+            <td>
+              <input
+                name="user_email"
+                type="email"
+                placeholder="Ex:example@gmail.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="user_password">Password</label></td>
+            <td><input name="user_password" type="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="user_password">Confirm Password</label></td>
+            <td><input name="user_password" type="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="user_dob">DOB</label></td>
+            <td><input name="user_dob" type="date" /></td>
+          </tr>
+          <tr>
+            <td><label>Gender</label></td>
+            <td>
+              <input type="radio" name="Gender" value="Male" /><label
+                >Male</label
+              >
+              <input type="radio" name="Gender" value="Female" /><label
+                >Female</label
+              >
+              <input type="radio" name="Gender" value="Custom" /><label
+                >Custom</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label>Select Country</label></td>
+            <td>
+              <select name="Country" id="Country">
+                <option value="IND">India</option>
+                <option value="US">USA</option>
+                <option value="AFR">Africa</option>
+                <option value="RUS">Russia</option>
+                <option value="China">China</option>
+                <option value="Europe">Europe</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Upload Picture</label></td>
+            <td><input type="file" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td><label>Select Course</label></td>
+            <td>
+              <select name="select course" id="select course">
+                <option value="java">JAVA</option>
+                <option value="sql">SQL</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Delivery Mode</label></td>
+            <td>
+              <input
+                type="checkbox"
+                name="Delivery Mode"
+                value="online"
+              /><label>ONLINE</label>
+              <input
+                type="checkbox"
+                name="Delivery Mode"
+                value="offline"
+              /><label>OFFLINE</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Comments</label></td>
+            <td>
+              <textarea rows="5" cols="30"></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <td><button type="submit">Submit></button></td>
+    </form>
+  </body>
+</html>
